@@ -1,0 +1,9 @@
+version: '3'
+services:
+  project_name:
+    image: downey21/repo_private:r_v1
+    stdin_open: true
+    tty: true
+    volumes:
+      - ~/Project:/root/Project
+      - ~/settings.json:/root/.vscode/settings.json
